@@ -117,7 +117,7 @@ import axios from "axios";
 
   export const getServerSideProps = async ({params}) => {
 
-       const res = await axios.get(`http://localhost:3000/api/orders/${params.id}`)
+       const res = await axios.get(`https://pizza-app-five.vercel.app/api/orders/${params.id}`)
         console.log(res);
 
        return {
