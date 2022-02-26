@@ -1,0 +1,123 @@
+.container {
+    height:102vh;
+    background-color: #d1411e;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .arrowContainer {
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .wrapper {
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    transition: all 1.5s ease-in-out ;
+  }
+  
+  .imgContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container{
+      height: 50vh;
+    }
+  }
+  
+  .banner{
+    height:42vh;
+    display: flex;
+    justify-content: center;
+    background:rgba(65, 0, 0, 0.9) url('/img/pizzabg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    margin-bottom: 14rem;
+  }
+
+  .offerscontainer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 45vh;
+    justify-content: space-between;
+
+  }
+
+  .title{
+    margin-top: 3rem;
+    font-size: 25px;
+    font-weight: bold;
+    color:red;
+   
+  }
+
+
+
+  .title2{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    
+  }
+
+  .offers{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    bottom:-13rem;
+    height: 30vh;
+    width:18vw;
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+
+    .offerscontainer{
+      display: flex;
+    }
+
+    .offers{
+      
+      margin-left: 0rem;
+      margin-bottom: 0rem;
+      margin-right: 0rem;
+      height: 5vh;
+      height: 5vh;
+      bottom:-5rem;
+      width:8vw;
+    }
+  
+  }
+  @media screen and (max-width: 830px) {
+
+   .wrapper {
+      width: 340vw;
+      height: 100%;
+      display: flex;
+      transition: all 1.5s ease-in-out ;
+    }
+   
+    .offers{
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      height: 20vh;
+      width:28vw;
+    }
+  
+   
+  }
